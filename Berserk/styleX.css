@@ -1,24 +1,32 @@
+
 body {
+    background-image: url('photo/10.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/*body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #000;
     color: #fff;                                    
-}
+}*/
 
 header {
     background-image: url('photo/09.jpg');
-
     padding: 20px;
     text-align: center;
-
 }
-
-
 
 nav {
     background-color: #8B0000;
     padding: 10px;
     text-align: center;
+    display: flex; /* Добавлено свойство для создания горизонтального ряда */
+    justify-content: center; /* Добавлено свойство для выравнивания по центру */
 }
 
 nav a {
@@ -26,6 +34,9 @@ nav a {
     text-decoration: none;
     margin: 0 20px;
 }
+
+/* Ваш остальной CSS код... */
+
 
 section {
     padding: 20px;
@@ -35,12 +46,16 @@ h2 {
     color: #800000;
 }
 
-footer {
+
+li {
+    color: #fff; /* Устанавливаем цвет текста для элементов списков li */
+}
+/*footer {
     background-color: #8B0000;
     padding: 10px;
     text-align: center;
     bottom: 0;
-}
+} */
 
 
 .gallery {
@@ -170,10 +185,11 @@ nav button:hover {
 }
 
 .glowing-btn:hover {
-    color: inherit;  
-    text-shadow: none;
-    animation: none;
+    color: #fff; /* Установка цвета текста при наведении на кнопку */
+    text-shadow: none; /* Убираем тень текста при наведении */
+    animation: none; /* Отключаем анимацию при наведении */
 }
+
 
 .glowing-btn:hover .glowing-txt {
     animation: none;
@@ -193,6 +209,7 @@ nav button:hover {
 .glowing-btn:hover::after {
     opacity: 1;
 }
+
 
 
 
